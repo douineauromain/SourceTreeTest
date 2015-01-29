@@ -31,6 +31,7 @@ class SPDO
    * @var string
    */
   const DEFAULT_SQL_HOST = 'localhost';
+  //YAYAYA MAJ DE L'API !
  
   /**
    * Constante: hôte de la bdd
