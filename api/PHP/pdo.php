@@ -36,6 +36,7 @@ class SPDO
   //MAJ V3
   //Super maj trouvé par intégration dont master aura besoin
   //MAJ V5 POUR MASTER
+  //V6 pour master
  
   /**
    * Constante: hôte de la bdd
