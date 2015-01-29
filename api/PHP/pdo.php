@@ -34,6 +34,7 @@ class SPDO
   //YAYAYA MAJ DE L'API !
   //MAJ V2
   //MAJ V3
+  //Super maj trouvé par intégration dont master aura besoin
  
   /**
    * Constante: hôte de la bdd
