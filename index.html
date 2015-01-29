@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Liste des etudiants</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.css" />
+        <script src="jquery.js"></script>
+        <script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
+        <script src="js/engine.js"></script>
+    </head>
+    <body>
+
+        <div data-role="page" id="page1">
+            <div data-role="header" data-position="fixed">
+                <h1>Liste des etudiants</h1>
+            </div>
+
+            <div role="main" class="ui-content">
+
+                <label for="text-basic">Nouvel étudiant :</label>
+                <input type="text" name="text-basic" id="studentinput" placeholder="Nom Prénom" value="">
+                <button class="ui-btn ui-icon-plus ui-btn-icon-left" id="addStudent">Ajouter un étudiant</button>
+
+                <ul data-role="listview" id="studentlist" data-autodividers="true" data-filter="true" data-filter-placeholder="Recherche..." data-inset="true">
+
+                </ul>
+
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+                <button class="ui-btn ui-icon-info ui-btn-icon-left" style="width:90%;margin-left:5%;">About</button>
+            </div>
+        </div>
+
+        <div data-role="dialog" id="dialogedit">
+            <div data-role="header" >
+                <h1>Edit Task</h1>
+            </div>
+
+            <div role="main" class="ui-content">
+                <p>
+                    <input type="text" name="text-basic" id="dialoginput" placeholder="New Task..." value="">
+                    <button class="ui-btn ui-icon-check ui-btn-icon-left" id="dialogUpdate">Update</button>
+                    <a data-role="button" class="ui-btn ui-icon-delete ui-btn-icon-left" data-theme="b" id="dialogDelete">Delete</a>
+                </p>
+            </div>
+        </div>
+
+
+        <div data-role="page" id="notes">
+            <div data-role="header" data-add-back-btn="true">
+                <h1>Liste des notes de <span id="namelabel"></span></h1>
+            </div>
+
+            <div role="main" class="ui-content">
+
+                <label for="text-basic">Nouvelle Note :</label>
+                <input type="text" name="text-basic" id="noteinput" placeholder="Matière" value="">
+                <input type="range" name="slider-fill" id="noterange" value="0" min="0" max="20" step="50" data-highlight="true">
+                <button class="ui-btn ui-icon-plus ui-btn-icon-left" id="addNote">Ajouter une note</button>
+
+                <ul data-role="listview" id="noteslist" data-autodividers="true" data-filter="true" data-filter-placeholder="Recherche..." data-inset="true">
+
+                </ul>
+
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+                <button class="ui-btn ui-icon-info ui-btn-icon-left" style="width:90%;margin-left:5%;">About</button>
+            </div>
+
+
+
+        </div>
+
+    </body>
+</html>
